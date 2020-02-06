@@ -1,3 +1,4 @@
+# IBAN Registry Release 86 – January 2020
 AD:
     country_name: Andorra
     iban_structure: AD2!n4!n4!n12!c
@@ -87,8 +88,8 @@ BE:
     iban_electronic_format_example: BE68539007547034
     iban_print_format_example: 'BE68 5390 0754 7034'
     branch_identifier_position: 5-8
-    branch_identifier_structure: 4!n
-    branch_identifier_regex: '/^\d{4}$/'
+    branch_identifier_structure: 4!
+    branch_identifier_regex: /^4!$/
 BG:
     country_name: Bulgaria
     iban_structure: BG2!n4!a4!n2!n8!c
@@ -99,9 +100,9 @@ BG:
     bban_length: 18
     iban_electronic_format_example: BG80BNBG96611020345678
     iban_print_format_example: 'BG80 BNBG 9661 1020 3456 78'
-    branch_identifier_position: 5-10
-    branch_identifier_structure: 6!n
-    branch_identifier_regex: '/^\d{6}$/'
+    branch_identifier_position: 5-8
+    branch_identifier_structure: 4!n
+    branch_identifier_regex: '/^\d{4}$/'
 BH:
     country_name: Bahrain
     iban_structure: BH2!n4!a14!c
@@ -112,9 +113,9 @@ BH:
     bban_length: 18
     iban_electronic_format_example: BH67BMAG00001299123456
     iban_print_format_example: 'BH67 BMAG 0000 1299 1234 56'
-    branch_identifier_position: 4-7
-    branch_identifier_structure: 4!n
-    branch_identifier_regex: '/^\d{4}$/'
+    branch_identifier_position: 5-10
+    branch_identifier_structure: 6!n
+    branch_identifier_regex: '/^\d{6}$/'
 BR:
     country_name: Brazil
     iban_structure: BR2!n8!n5!n10!n1!a1!c
@@ -138,9 +139,9 @@ BY:
     bban_length: 24
     iban_electronic_format_example: BY13NBRB3600900000002Z00AB00
     iban_print_format_example: 'BY13 NBRB 3600 9000 0000 2Z00 AB00'
-    branch_identifier_position: 5-10
-    branch_identifier_structure: 6!n
-    branch_identifier_regex: '/^\d{6}$/'
+    branch_identifier_position: 4-7
+    branch_identifier_structure: 4!n
+    branch_identifier_regex: '/^\d{4}$/'
 CH:
     country_name: Switzerland
     iban_structure: CH2!n5!n12!c
@@ -151,9 +152,9 @@ CH:
     bban_length: 17
     iban_electronic_format_example: CH9300762011623852957
     iban_print_format_example: 'CH93 0076 2011 6238 5295 7'
-    branch_identifier_position: 4-6
-    branch_identifier_structure: 3!n
-    branch_identifier_regex: '/^\d{3}$/'
+    branch_identifier_position: 5-10
+    branch_identifier_structure: 6!n
+    branch_identifier_regex: '/^\d{6}$/'
 CR:
     country_name: 'Costa Rica'
     iban_structure: CR2!n4!n14!n
@@ -164,9 +165,9 @@ CR:
     bban_length: 18
     iban_electronic_format_example: CR05015202001026284066
     iban_print_format_example: 'CR05 0152 0200 1026 2840 66'
-    branch_identifier_position: 5-7
-    branch_identifier_structure: '3'
-    branch_identifier_regex: /^3$/
+    branch_identifier_position: 4-6
+    branch_identifier_structure: 3!n
+    branch_identifier_regex: '/^\d{3}$/'
 CY:
     country_name: Cyprus
     iban_structure: CY2!n3!n5!n16!c
@@ -177,9 +178,9 @@ CY:
     bban_length: 24
     iban_electronic_format_example: CY17002001280000001200527600
     iban_print_format_example: 'CY17 0020 0128 0000 0012 0052 7600'
-    branch_identifier_position: 3-4
-    branch_identifier_structure: 2!n
-    branch_identifier_regex: '/^\d{2}$/'
+    branch_identifier_position: 5-7
+    branch_identifier_structure: '3'
+    branch_identifier_regex: /^3$/
 CZ:
     country_name: Czechia
     iban_structure: CZ2!n4!n6!n10!n
@@ -190,9 +191,9 @@ CZ:
     bban_length: 20
     iban_electronic_format_example: CZ6508000000192000145399
     iban_print_format_example: 'CZ65 0800 0000 1920 0014 5399'
-    branch_identifier_position: 7-11
-    branch_identifier_structure: 5!n
-    branch_identifier_regex: '/^\d{5}$/'
+    branch_identifier_position: 3-4
+    branch_identifier_structure: 2!n
+    branch_identifier_regex: '/^\d{2}$/'
 DE:
     country_name: Germany
     iban_structure: DE2!n8!n10!n
@@ -203,9 +204,9 @@ DE:
     bban_length: 18
     iban_electronic_format_example: DE89370400440532013000
     iban_print_format_example: 'DE89 3704 0044 0532 0130 00'
-    branch_identifier_position: 5-8
-    branch_identifier_structure: 4!n
-    branch_identifier_regex: '/^\d{4}$/'
+    branch_identifier_position: 7-11
+    branch_identifier_structure: 5!n
+    branch_identifier_regex: '/^\d{5}$/'
 DK:
     country_name: Denmark
     iban_structure: DK2!n4!n9!n1!n
@@ -216,9 +217,9 @@ DK:
     bban_length: 14
     iban_electronic_format_example: DK5000400440116243
     iban_print_format_example: 'DK50 0040 0440 1162 43'
-    branch_identifier_position: 6-10
-    branch_identifier_structure: 5!n
-    branch_identifier_regex: '/^\d{5}$/'
+    branch_identifier_position: 5-8
+    branch_identifier_structure: 4!n
+    branch_identifier_regex: '/^\d{4}$/'
 DO:
     country_name: 'Dominican Republic'
     iban_structure: DO2!n4!c20!n
@@ -242,6 +243,19 @@ EE:
     bban_length: 16
     iban_electronic_format_example: EE382200221020145685
     iban_print_format_example: 'EE38 2200 2210 2014 5685'
+    branch_identifier_position: 6-10
+    branch_identifier_structure: 5!n
+    branch_identifier_regex: '/^\d{5}$/'
+EG:
+    country_name: Egypt
+    iban_structure: EG2!n4!n4!n17!n
+    bban_structure: 4!n4!n17!n
+    iban_regex: '/^EG\d{2}\d{4}\d{4}\d{17}$/'
+    bban_regex: '/^\d{4}\d{4}\d{17}$/'
+    iban_length: 29
+    bban_length: 25
+    iban_electronic_format_example: EG380019000500000000263180002
+    iban_print_format_example: EG380019000500000000263180002
     branch_identifier_position: 5-9
     branch_identifier_structure: 5!n
     branch_identifier_regex: '/^\d{5}$/'
@@ -320,9 +334,9 @@ GE:
     bban_length: 18
     iban_electronic_format_example: GE29NB0000000101904917
     iban_print_format_example: 'GE29 NB00 0000 0101 9049 17'
-    branch_identifier_position: 1-4
-    branch_identifier_structure: 3!n
-    branch_identifier_regex: '/^\d{3}$/'
+    branch_identifier_position: N/A
+    branch_identifier_structure: N/A
+    branch_identifier_regex: /^N/A$/
 GI:
     country_name: Gibraltar
     iban_structure: GI2!n4!a15!c
@@ -334,8 +348,8 @@ GI:
     iban_electronic_format_example: GI75NWBK000000007099453
     iban_print_format_example: 'GI75 NWBK 0000 0000 7099 453'
     branch_identifier_position: 3-5
-    branch_identifier_structure: 2!n
-    branch_identifier_regex: '/^\d{2}$/'
+    branch_identifier_structure: 3!n
+    branch_identifier_regex: '/^\d{3}$/'
 GL:
     country_name: Greenland
     iban_structure: GL2!n4!n9!n1!n
@@ -347,8 +361,8 @@ GL:
     iban_electronic_format_example: GL8964710001000206
     iban_print_format_example: 'GL89 6471 0001 0002 06'
     branch_identifier_position: 3-4
-    branch_identifier_structure: ''
-    branch_identifier_regex: ''
+    branch_identifier_structure: 2!n
+    branch_identifier_regex: '/^\d{2}$/'
 GR:
     country_name: Greece
     iban_structure: GR2!n3!n4!n16!c
